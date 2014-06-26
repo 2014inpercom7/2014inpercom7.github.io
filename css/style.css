@@ -36,6 +36,8 @@ body {
 	  border-left: 0px;
 	}
 
+
+
 }
 
 @media (max-width: 1111px ) {
@@ -60,8 +62,93 @@ body {
        width:100%;   	
     }
 
+    .navbar-form{
+      border-top: 0px solid transparent;
+    }
 }
 
+
+/***************************************************
+  navbar
+**************************************************/
+
+@media (min-width: 768px) {
+#parent {
+  display: table
+}
+
+
+#child {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  margin:0;
+    float:none;
+ }
+}
+/** COLORES **/
+
+.navbar-default {
+  background-color: #00a96d;
+  border-color: #009762;
+  border-bottom: 4px solid #009762;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #009762;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #009762;
+}
+.navbar-default .navbar-toggle {
+  border-color: #009762;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #009762;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #009762;
+  }
+}
 
 /***************************************************
 	THYPEAHEAD 
