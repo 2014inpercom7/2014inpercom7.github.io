@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cursos</title>
+    <title>Mis Cursos</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="mi_carrrera.html">Mi Carrrera</a></li>
-              <li class="active"><a href="mis_cursos.html">Cursos</a></li>
+              <li class="active"><a href="mis_cursos.html">Mis Cursos</a></li>
               <li><a href="mis_examenes.html">Mis Examenes</a></li>    
               
               <li class="dropdown">
@@ -68,155 +68,110 @@
     <div class="container">
       <div class="row">
         <ol class="breadcrumb">
-        <li><a href="mi_perfil.thml">Home</a></li>
-        <li class="active">Cursos</li>
+        <li><a href="mi_perfil.thml">Tomás Laurenzo</a></li>
+        <li class="active">Mis cursos</li>
         </ol>
       </div>
     </div>
     
 
-
-
-
-
-
-
     <div class="container">
-      <div id="content">
-        
-        <!-- tabs  -->
-        <div class="row">
-          <div class="col-xs-12  text-center">
-            <div class="btn-group" data-toggle="buttons">
-              <label data-toggle="tab"  href="#mis" class="btn btn-default active" >
-                <input type="radio" name="options" id="option1">Mis cursos
-              </label>
-              <label  data-toggle="tab"  href="#habilitados" class="btn btn-default">
-                <input type="radio" name="options" id="option2">Habilitados <span class="hidden-xs">para inscripcion</span>
-              </label>
-              <label  data-toggle="tab"  href="#todos" class="btn btn-default">
-                <input type="radio" name="options" id="option3">Todos los Cursos
-              </label>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-xs-12  text-center">
+          <div class="btn-group">
+            <a class="btn btn-default" role="button" href="inscribirse.html">Inscribirse</a>
+            <a class="btn btn-default" role="button" href="todos_los_cursos.html">Todos los cursos</a>
         </div>
-
-
-        <!-- contenido  -->
-        <div id="my-tab-content" class="tab-content">
-
-          <!-- MIS CURSOS -->
-          <div class="tab-pane active" id="mis">
-            <div class="container toppaddingsmall">
-              <div class="row">
-                <table class="table table-responsive table-hover">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Nombre</th>
-                      <th>Fecha de curso</th>
-                      <th>Resultado de curso</th>
-                      <th>Resultado de examen</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Interacción persona-computadora</td>
-                      <td>12/10/2013</td>
-                      <td>En curso</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
-                      <td>Aprobado</td>
-                      <td>Aprobado 8</td>
-                    </tr>
-                    <tr>
-                      <td><a href="no_implementado.html">45155</a></td>
-                      <td>Sistemas Operativos</td>
-                      <td>12/10/2012</td>
-                      <td>Aprobado</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
-                      <td>Aprobado</td>
-                      <td>Aprobado 8</td>
-                    </tr>
-                    <tr>
-                      <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
-                      <td>Aprobado</td>
-                      <td>Aprobado 8</td>
-                    </tr>
-                    <tr>
-                      <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
-                      <td>Aprobado</td>
-                      <td>Aprobado 8</td>
-                    </tr>
-                    <tr>
-                      <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
-                      <td>Aprobado</td>
-                      <td>Aprobado 8</td>
-                    </tr>
-                    <tr>
-                      <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
-                      <td>Aprobado</td>
-                      <td>Aprobado 8</td>
-                    </tr>
-                    <tr>
-                      <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
-                      <td>Aprobado</td>
-                      <td>Aprobado 8</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <ul class="pager">
-                  <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
-                  <li class="next"><a href="#">Viejo &rarr;</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- HABILITADOS -->
-          <div class="tab-pane" id="habilitados">
-              <h1>sadf</h1>
-              <p>222222222222222</p>
-          </div>
-
-
-
-          <!-- TODOS -->
-          <div class="tab-pane" id="todos">
-              <h1>asdf</h1>
-              <p>3333333333333333333333333</p>
-          </div>
-
-
-
-          
-        </div>
+      </div>  
       </div>
-    </div> <!-- container -->
-    
+    </div>
+
+    <div class="container toppaddingsmall">
+      <div class="row">
+        <table class="table table-responsive table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Fecha de curso</th>
+              <th>Resultado de curso</th>
+              <th>Resultado de examen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="iterpercomp.thml">4635</a></td>
+              <td>Interacción persona-computadora</td>
+              <td>12/10/2013</td>
+              <td>En curso</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Calculo1</td>
+              <td>12/10/2012</td>
+              <td>Aprobado</td>
+              <td>Aprobado 8</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">45155</a></td>
+              <td>Sistemas Operativos</td>
+              <td>12/10/2012</td>
+              <td>Aprobado</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Calculo1</td>
+              <td>12/10/2012</td>
+              <td>Aprobado</td>
+              <td>Aprobado 8</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Calculo1</td>
+              <td>12/10/2012</td>
+              <td>Aprobado</td>
+              <td>Aprobado 8</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Calculo1</td>
+              <td>12/10/2012</td>
+              <td>Aprobado</td>
+              <td>Aprobado 8</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Calculo1</td>
+              <td>12/10/2012</td>
+              <td>Aprobado</td>
+              <td>Aprobado 8</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Calculo1</td>
+              <td>12/10/2012</td>
+              <td>Aprobado</td>
+              <td>Aprobado 8</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Calculo1</td>
+              <td>12/10/2012</td>
+              <td>Aprobado</td>
+              <td>Aprobado 8</td>
+            </tr>
+          </tbody>
+        </table>
 
 
+        <ul class="pager">
+          <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
+          <li class="next"><a href="#">Viejo &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
 
 
 
@@ -267,11 +222,5 @@
         source: substringMatcher(states)
       });
      </script>
-
-     <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-        $('#tabs').tab();
-    });
-</script>    
   </body>
 </html>
