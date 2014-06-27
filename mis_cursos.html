@@ -88,7 +88,7 @@
         <div class="row">
           <div class="col-xs-12  text-center">
             <div class="btn-group" data-toggle="buttons">
-              <label data-toggle="tab"  href="#mis" class="btn btn-default active" >
+              <label data-toggle="tab"  href="#mis" class="btn btn-default" >
                 <input type="radio" name="options" id="option1">Mis cursos
               </label>
               <label  data-toggle="tab"  href="#habilitados" class="btn btn-default">
@@ -228,50 +228,30 @@
     <script src="js/typeahead.bundle.min.js"></script>
     <script src="js/typeahead.jquery.min.js"></script>
 
-     <script type="text/javascript">
-      var substringMatcher = function(strs) {
-        return function findMatches(q, cb) {
-          var matches, substringRegex;
 
-          // an array that will be populated with substring matches
-          matches = [];
 
-          // regex used to determine if a string contains the substring `q`
-          substrRegex = new RegExp(q, 'i');
 
-          // iterate through the pool of strings and for any string that
-          // contains the substring `q`, add it to the `matches` array
-          $.each(strs, function(i, str) {
-            if (substrRegex.test(str)) {
-              // the typeahead jQuery plugin expects suggestions to a
-              // JavaScript object, refer to typeahead docs for more info
-              matches.push({ value: str });
-            }
-          });
+ <script type="text/javascript">
 
-          cb(matches);
-        };
-      };
+// Javascript to enable link to tab
+var hash = document.location.hash;
+var prefix = "tab_";
+if (hash) {
+    $('.btn-group label[href='+hash.replace(prefix,"")+']').tab('show');
+    $('.btn-group label[href='+hash.replace(prefix,"")+']').button('toggle');
+} 
 
-      var states = ['Caluclo 1', 'Caluclo 2', 'Caluclo 3', 'Interacción persona-computadora', 'Sistemas Operativos', 'GAL 1','Sistemas Operativos', 'Mis Cursos','Todos los Cursos','Inscribirse a Curso','Desistir de Curso', 'Mis Examenes','Calendario de Examenes','Inscribirse a Examen','Desistir de Examen','Ayuda'
-      ];
+// Change hash for page-reload
+$('.btn-group label').on('shown', function (e) {
+    window.location.hash = e.target.hash.replace("#", "#" + prefix);
+});
 
-      $('#the-basics .typeahead').typeahead({
-        hint: true,
-        highlight: true,
-        minLength: 1
-      },
-      {
-        name: 'states',
-        displayKey: 'value',
-        source: substringMatcher(states)
-      });
-     </script>
 
-     <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-        $('#tabs').tab();
-    });
+
+
+
 </script>    
+
+
   </body>
 </html>
