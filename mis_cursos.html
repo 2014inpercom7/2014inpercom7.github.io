@@ -108,7 +108,12 @@
           <!-- MIS CURSOS -->
           <div class="tab-pane active" id="mis">
             <div class="container toppaddingsmall">
-              <div class="row">         
+              <div class="row">
+                <div class="input-group"> <span class="input-group-addon">Filtro</span>
+                <input id="filter1" type="text" class="form-control" placeholder="Escriba aqui para filtrar...">
+                </div>
+              </div>
+              <div class="row toppaddingsmall">         
                 <table class="table table-responsive table-hover">
                   <thead>
                     <tr>
@@ -118,7 +123,7 @@
                       <th>Estado</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="searchable1">
                     <tr>
                       <td><a href="iterpercomp.thml">4635</a></td>
                       <td>Interacción persona-computadora</td>
@@ -188,81 +193,31 @@
           <!-- HABILITADOS -->
           <div class="tab-pane" id="habilitados">
             <div class="container toppaddingsmall">
-              <div class="row">         
-                
+              
+              <div class="row">
+                <div class="input-group"> <span class="input-group-addon">Filtro</span>
+                <input id="filter2" type="text" class="form-control" placeholder="Escriba aqui para filtrar...">
+                </div>
+              </div>
+              
+              <div class="row toppaddingsmall">         
                 <table class="table table-responsive table-hover">
                   <thead>
                     <tr>
+                      <th></th>
                       <th>#</th>
                       <th>Nombre</th>
                       <th>Fin de inscripción</th>
                       <th>Inscriptos</th>
-                      <th></th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="searchable2">
                     <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
                       <td><a href="iterpercomp.thml">4635</a></td>
                       <td>Métodos númericos</td>
                       <td>12/03/2014</td>
                       <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Métodos númericos</td>
-                      <td>12/03/2014</td>
-                      <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus"></span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Métodos númericos</td>
-                      <td>12/03/2014</td>
-                      <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus"></span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Métodos númericos</td>
-                      <td>12/03/2014</td>
-                      <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus"></span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Métodos númericos</td>
-                      <td>12/03/2014</td>
-                      <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus"></span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Métodos númericos</td>
-                      <td>12/03/2014</td>
-                      <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus"></span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Métodos númericos</td>
-                      <td>12/03/2014</td>
-                      <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus"></span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Métodos númericos</td>
-                      <td>12/03/2014</td>
-                      <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus"></span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="iterpercomp.thml">4635</a></td>
-                      <td>Métodos númericos</td>
-                      <td>12/03/2014</td>
-                      <td>120</td>
-                      <td><span class="glyphicon glyphicon-plus"></span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -288,7 +243,23 @@
 
 
 
-
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel">Se a realizado la inscripción</h4>
+          </div>
+          <div class="modal-body">
+            Puede desistir desde Mis Cursos.<br>
+            Su codigo de inscripción es 112323553355.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -359,7 +330,56 @@ if (hash) {
 $('.btn-group label').on('shown', function (e) {
     window.location.hash = e.target.hash.replace("#", "#" + prefix);
 });
+
 </script>    
+
+
+
+ <script type="text/javascript">
+//para el filtro
+$(document).ready(function () {
+
+    (function ($) {
+
+        $('#filter1').keyup(function () {
+
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable1 tr').hide();
+            $('.searchable1 tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+
+        })
+
+    }(jQuery));
+
+});
+
+//para el filtro
+$(document).ready(function () {
+
+    (function ($) {
+
+        $('#filter2').keyup(function () {
+
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable2 tr').hide();
+            $('.searchable2 tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+
+        })
+
+    }(jQuery));
+
+});
+
+
+
+
+
+</script>    
+
 
 
   </body>
