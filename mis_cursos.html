@@ -92,7 +92,7 @@
                 <input type="radio" name="options" id="option1">Mis cursos
               </label>
               <label  data-toggle="tab"  href="#habilitados" class="btn btn-default">
-                <input type="radio" name="options" id="option2">Habilitados <span class="hidden-xs">para inscripcion</span>
+                <input type="radio" name="options" id="option2">Inscribirse</span>
               </label>
               <label  data-toggle="tab"  href="#todos" class="btn btn-default">
                 <input type="radio" name="options" id="option3">Todos los Cursos
@@ -108,83 +108,74 @@
           <!-- MIS CURSOS -->
           <div class="tab-pane active" id="mis">
             <div class="container toppaddingsmall">
-              <div class="row">
+              <div class="row">         
                 <table class="table table-responsive table-hover">
                   <thead>
                     <tr>
                       <th>#</th>
                       <th>Nombre</th>
-                      <th>Fecha de curso</th>
-                      <th>Resultado de curso</th>
-                      <th>Resultado de examen</th>
+                      <th>Fecha</th>
+                      <th>Estado</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td><a href="iterpercomp.thml">4635</a></td>
                       <td>Interacción persona-computadora</td>
-                      <td>12/10/2013</td>
-                      <td>En curso</td>
-                      <td></td>
+                      <td>2014 (1° Semestre)</td>
+                      <td>Esperando confirmación <a href="">(Desistir)</a></td>
                     </tr>
                     <tr>
                       <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
+                      <td>Arquitecturas de computadoras</td>
+                      <td>2013 (2° Semestre)</td>
                       <td>Aprobado</td>
-                      <td>Aprobado 8</td>
                     </tr>
                     <tr>
                       <td><a href="no_implementado.html">45155</a></td>
                       <td>Sistemas Operativos</td>
-                      <td>12/10/2012</td>
+                      <td>2013 (1° Semestre)</td>
                       <td>Aprobado</td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
+                      <td>Progamación 2</td>
+                      <td>2013 (1° Semestre)</td>
                       <td>Aprobado</td>
-                      <td>Aprobado 8</td>
                     </tr>
                     <tr>
                       <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
+                      <td>Física 1</td>
+                      <td>2012 (1° Semestre)</td>
                       <td>Aprobado</td>
-                      <td>Aprobado 8</td>
                     </tr>
                     <tr>
                       <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
+                      <td>Lógica</td>
+                      <td>2012 (1° Semestre)</td>
                       <td>Aprobado</td>
-                      <td>Aprobado 8</td>
                     </tr>
                     <tr>
                       <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
+                      <td>Cálculo 2</td>
+                      <td>2012 (Anual)</td>
                       <td>Aprobado</td>
-                      <td>Aprobado 8</td>
                     </tr>
                     <tr>
                       <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
+                      <td>Cálculo 2</td>
+                      <td>2011(2° Semestre)</td>
                       <td>Aprobado</td>
-                      <td>Aprobado 8</td>
                     </tr>
                     <tr>
                       <td><a href="no_implementado.html">56456</a></td>
-                      <td>Calculo1</td>
-                      <td>12/10/2012</td>
+                      <td>Cálculo 1</td>
+                      <td>2011 (1° Semestre)</td>
                       <td>Aprobado</td>
-                      <td>Aprobado 8</td>
                     </tr>
                   </tbody>
                 </table>
+
                 <ul class="pager">
                   <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
                   <li class="next"><a href="#">Viejo &rarr;</a></li>
@@ -196,8 +187,87 @@
 
           <!-- HABILITADOS -->
           <div class="tab-pane" id="habilitados">
-              <h1>sadf</h1>
-              <p>222222222222222</p>
+            <div class="container toppaddingsmall">
+              <div class="row">         
+                
+                <table class="table table-responsive table-hover">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Nombre</th>
+                      <th>Fin de inscripción</th>
+                      <th>Inscriptos</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus"></span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus"></span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus"></span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus"></span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus"></span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus"></span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus"></span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="iterpercomp.thml">4635</a></td>
+                      <td>Métodos númericos</td>
+                      <td>12/03/2014</td>
+                      <td>120</td>
+                      <td><span class="glyphicon glyphicon-plus"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
 
@@ -231,6 +301,50 @@
 
 
 
+
+     <script type="text/javascript">
+      var substringMatcher = function(strs) {
+        return function findMatches(q, cb) {
+          var matches, substringRegex;
+
+          // an array that will be populated with substring matches
+          matches = [];
+
+          // regex used to determine if a string contains the substring `q`
+          substrRegex = new RegExp(q, 'i');
+
+          // iterate through the pool of strings and for any string that
+          // contains the substring `q`, add it to the `matches` array
+          $.each(strs, function(i, str) {
+            if (substrRegex.test(str)) {
+              // the typeahead jQuery plugin expects suggestions to a
+              // JavaScript object, refer to typeahead docs for more info
+              matches.push({ value: str });
+            }
+          });
+
+          cb(matches);
+        };
+      };
+
+      var states = ['Cálculo 1', 'Cálculo 2', 'Cálculo 3', 'Interacción persona-computadora', 'Sistemas Operativos', 'GAL 1','Sistemas Operativos', 'Mis Cursos','Todos los Cursos','Inscribirse a Curso','Desistir de Curso', 'Mis Examenes','Calendario de Examenes','Inscribirse a Examen','Desistir de Examen','Ayuda'
+      ];
+
+      $('#the-basics .typeahead').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        displayKey: 'value',
+        source: substringMatcher(states)
+      });
+     </script>
+
+
+
+
  <script type="text/javascript">
 
 // Javascript to enable link to tab
@@ -245,11 +359,6 @@ if (hash) {
 $('.btn-group label').on('shown', function (e) {
     window.location.hash = e.target.hash.replace("#", "#" + prefix);
 });
-
-
-
-
-
 </script>    
 
 

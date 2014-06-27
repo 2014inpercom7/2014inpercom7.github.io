@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>SGB-Sistemas de gestion de bedelias</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,21 +18,90 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Paginas hechas</h1>
-        </div>
-        <div class="col-xs-12">
-          <ul>
-            <li><a href="mis_cursos.html">mis_cursos.html</a></li>
-            <li><a href="no_implementado.html">no_implementado.html</a></li>
-          </ul>
-        </div>
+    <body>
+
+    <!--barra de navegacion -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand " href="home.html">SGB</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left navbar-input-group" role="search" style="z-index:11000">
+              <div class="form-group"  id="the-basics">
+                <input type="text" class="form-control typeahead" placeholder="Buscar">
+              </div>
+              <button type="submit" class="btn btn-default">Ir</button>
+            </form>
+
+            <form class="navbar-form navbar-right" role="iniciar_sesion">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Usuario">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Contraseña">
+              </div>
+              <button type="" class="btn btn-default">Entrar</button>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </div>
+    </nav>
     </div>    
-
-
+    <div class="row">
+      <div class="container">
+        <div class="col-xs-12 col-sm-3">
+          <div class="jumbotron">
+            <h3>Tecnologia y Naturaleza</h3>
+              <p><a class="btn btn-default btn-lg" role="button">Arquitectura y diseño</a></p>
+              <p><a class="btn btn-default btn-lg" role="button">Ingenieria</a></p>
+              <p><a class="btn btn-default btn-lg" role="button">Quimica</a></p>
+              <p><a class="btn btn-default btn-lg" role="button">Agronomía</a></p>
+              <p><a class="btn btn-default btn-lg" role="button">Veterinaria</a></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="jumbotron">
+            <h3>Sociedad</h3>
+            <p><a class="btn btn-default btn-lg" role="button">Ciencias sociales</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Humanidades</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Economia y administración</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Derecho</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Comunicación</a></p>
+        </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="jumbotron">
+            <h3>Salud</h3>
+            <p><a class="btn btn-default btn-lg" role="button">Medicina</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Enfermeria</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Psicologia</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Odontologia</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Educación fisica</a></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="jumbotron">
+            <h3>Regionales</h3>
+            <p><a class="btn btn-default btn-lg" role="button">Norte</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Este</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Tacuarembó</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Paysandú</a></p>
+            <p><a class="btn btn-default btn-lg" role="button">Colonia</a></p>
+          </div>
+        </div>
+      </div>        
+    </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

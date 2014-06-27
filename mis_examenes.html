@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mis Exámenes</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--barra de navegacion -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand " href="home.html">SGB</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left navbar-input-group" role="search" style="z-index:11000">
+              <div class="form-group"  id="the-basics">
+                <input type="text" class="form-control typeahead" placeholder="Buscar">
+              </div>
+              <button type="submit" class="btn btn-default">Ir</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="mi_carrrera.html">Mi Carrrera</a></li>
+              <li><a href="mis_cursos.html">Mis Cursos</a></li>
+              <li class="active"><a href="mis_examenes.html">Mis Examenes</a></li>    
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-user"></span> Tomás
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="mi_perfil.hml">Ver perfil</a></li>
+                  <li class="divider"></li>
+                  <li><a href="home.html">Salir</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <ol class="breadcrumb">
+        <li><a href="mi_perfil.thml">Tomás Laurenzo</a></li>
+        <li class="active">Mis Exámenes</li>
+        </ol>
+      </div>
+    </div>
+    
+
+    <div class="container">
+      <div class="row">
+          <a class="btn btn-default" role="button" href="inscribirse.html">  <span class="glyphicon glyphicon-plus"></span>   Inscribirse</a>
+          <a class="btn btn-default pull-right" role="button" href="todos_los_cursos.html">Calendario</a>
+      </div>
+    </div>
+
+    <div class="container toppaddingsmall">
+      <div class="row">
+        <table class="table table-responsive table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Fecha</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="iterpercomp.thml">4635</a></td>
+              <td>GAL 1</td>
+              <td>Julio 2010</td>
+              <td>Espera de resultado</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>GAL 2</td>
+              <td>Julio 2013</td>
+              <td>Espera de confirmación</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">45155</a></td>
+              <td>Sistemas Operativos</td>
+              <td>Diciembre 2012</td>
+              <td>Aprobado 10</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Redes de computadoras</td>
+              <td>Febrero 2012</td>
+              <td>Aprobado 11</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Física 1</td>
+              <td>Febrero 2012</td>
+              <td>Aprobado 10</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Lógica</td>
+              <td>Julio 2012</td>
+              <td>Aprobado 10</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Cálculo 2</td>
+              <td>Diciembre 2009</td>
+              <td>Reprobado 0</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Cálculo 2</td>
+              <td>Julio 2010</td>
+              <td>Aprobado 5</td>
+            </tr>
+            <tr>
+              <td><a href="no_implementado.html">56456</a></td>
+              <td>Cálculo 1</td>
+              <td>Febrero 2009</td>
+              <td>Aprobado 10</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <ul class="pager">
+          <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
+          <li class="next"><a href="#">Viejo &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typeahead.bundle.min.js"></script>
+    <script src="js/typeahead.jquery.min.js"></script>
+
+     <script type="text/javascript">
+      var substringMatcher = function(strs) {
+        return function findMatches(q, cb) {
+          var matches, substringRegex;
+
+          // an array that will be populated with substring matches
+          matches = [];
+
+          // regex used to determine if a string contains the substring `q`
+          substrRegex = new RegExp(q, 'i');
+
+          // iterate through the pool of strings and for any string that
+          // contains the substring `q`, add it to the `matches` array
+          $.each(strs, function(i, str) {
+            if (substrRegex.test(str)) {
+              // the typeahead jQuery plugin expects suggestions to a
+              // JavaScript object, refer to typeahead docs for more info
+              matches.push({ value: str });
+            }
+          });
+
+          cb(matches);
+        };
+      };
+
+      var states = ['Cálculo 1', 'Cálculo 2', 'Cálculo 3', 'Interacción persona-computadora', 'Sistemas Operativos', 'GAL 1','Sistemas Operativos', 'Mis Cursos','Todos los Cursos','Inscribirse a Curso','Desistir de Curso', 'Mis Examenes','Calendario de Examenes','Inscribirse a Examen','Desistir de Examen','Ayuda'
+      ];
+
+      $('#the-basics .typeahead').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        displayKey: 'value',
+        source: substringMatcher(states)
+      });
+     </script>
+  </body>
+</html>
