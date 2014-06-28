@@ -280,7 +280,7 @@
                <div class="container toppaddingsmall">
               <div class="row">
                 <div class="input-group"> <span class="input-group-addon">Filtro</span>
-                <input id="filter1" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
+                <input id="filter3" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
                 </div>
               </div>
               <div class="row toppaddingsmall">         
@@ -295,7 +295,7 @@
                       <th>Tipo de Curso</th>
                     </tr>
                   </thead>
-                  <tbody class="searchable1">
+                  <tbody class="searchable3">
                     <tr>
                       <td><a href="perfil_materia.html">4635</a></td>
                       <td>Interacción persona-computadora</td>
@@ -305,7 +305,7 @@
                       <td>Con Exon. Total</td>
                     </tr>
                     <tr>
-                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td><a href="perfil_materia.html">546</a></td>
                       <td>Fundamentos de la Web Semántica</td>
                       <td>1°</td>
                       <td>8</td>
@@ -313,7 +313,7 @@
                       <td>Libre </td>
                     </tr>
                     <tr>
-                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td><a href="perfil_materia.html">1256</a></td>
                       <td>Combinatoria Analítica</td>
                       <td>1°</td>
                       <td>15</td>
@@ -321,7 +321,7 @@
                       <td>Reglam. sin Exoneración</td>
                     </tr>
                     <tr>
-                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td><a href="perfil_materia.html">2348</a></td>
                       <td>Teoría de Códigos Avanzado</td>
                       <td>1°</td>
                       <td>7</td>
@@ -329,7 +329,7 @@
                       <td>Con Exon. Total</td>
                     </tr>
                     <tr>
-                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td><a href="perfil_materia.html">21347</a></td>
                       <td>Int. a la Física Moderna</td>
                       <td>1°</td>
                       <td>10</td>
@@ -337,7 +337,7 @@
                       <td>Reglam. sin Exoneración</td>
                     </tr>
                     <tr>
-                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td><a href="perfil_materia.html">1234</a></td>
                       <td>Programación lógica</td>
                       <td>1°</td>
                       <td>11</td>
@@ -345,7 +345,7 @@
                       <td>Libre</td>
                     </tr>
                     <tr>
-                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td><a href="perfil_materia.html">7862</a></td>
                       <td>Programación funcional</td>
                       <td>1°</td>
                       <td>4</td>
@@ -353,7 +353,7 @@
                       <td>Libre</td>
                     </tr>
                     <tr>
-                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td><a href="perfil_materia.html">1237</a></td>
                       <td>Verificación de modelos</td>
                       <td>1°</td>
                       <td>6</td>
@@ -503,6 +503,26 @@ $(document).ready(function () {
             var rex = new RegExp($(this).val(), 'i');
             $('.searchable2 tr').hide();
             $('.searchable2 tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+
+        })
+
+    }(jQuery));
+
+});
+
+
+//para el filtro
+$(document).ready(function () {
+
+    (function ($) {
+
+        $('#filter3').keyup(function () {
+
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable3 tr').hide();
+            $('.searchable3 tr').filter(function () {
                 return rex.test($(this).text());
             }).show();
 

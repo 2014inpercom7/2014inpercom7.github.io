@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mis Exámenes</title>
+    <title>Cursos</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,8 +44,8 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="mi_carrrera.html">Mi Carrrera</a></li>
-              <li><a href="mis_cursos.html">Mis Cursos</a></li>
-              <li class="active"><a href="mis_examenes.html">Mis Examenes</a></li>    
+              <li ><a href="mis_cursos.html">Cursos</a></li>
+              <li class="active"><a href="mis_examenes.html">Examenes</a></li>    
               
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -68,98 +68,335 @@
     <div class="container">
       <div class="row">
         <ol class="breadcrumb">
-        <li><a href="mi_perfil.thml">Tomás Laurenzo</a></li>
-        <li class="active">Mis Exámenes</li>
+        <li><a href="mi_perfil.thml">Home</a></li>
+        <li class="active">Exámenes</li>
         </ol>
       </div>
     </div>
     
 
+
+
+
+
+
+
     <div class="container">
-      <div class="row">
-          <a class="btn btn-default" role="button" href="inscribirse.html">  <span class="glyphicon glyphicon-plus"></span>   Inscribirse</a>
-          <a class="btn btn-default pull-right" role="button" href="todos_los_cursos.html">Calendario</a>
+      <div id="content">
+        
+        <!-- tabs  -->
+        <div class="row">
+          <div class="col-xs-12  text-center">
+            <div class="btn-group" data-toggle="buttons">
+              <label data-toggle="tab"  href="#mis" class="btn btn-default active" >
+                <input type="radio" name="options" id="option1">Mis exámenes
+              </label>
+              <label  data-toggle="tab"  href="#habilitados" class="btn btn-default">
+                <input type="radio" name="options" id="option2">Inscribirse</span>
+              </label>
+              <label  data-toggle="tab"  href="#todos" class="btn btn-default">
+                <input type="radio" name="options" id="option3">Todos<span  class="hidden-xs">los exámenes</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- contenido  -->
+        <div id="my-tab-content" class="tab-content">
+
+          <!-- MIS EXAMENES -->
+          <div class="tab-pane active" id="mis">
+            <div class="container toppaddingsmall">
+              <div class="row">
+                <div class="input-group"> <span class="input-group-addon">Filtro</span>
+                <input id="filter1" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
+                </div>
+              </div>
+              <div class="row toppaddingsmall">         
+                <table class="table table-responsive table-hover">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Materia</th>
+                      <th>Fecha</th>
+                      <th>Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody class="searchable1">
+                    <tr>
+                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td>Interacción persona-computadora</td>
+                      <td>Jun 2014</td>
+                      <td>Esperando confirmación <a href="">(Desistir)</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="no_implementado.html">555</a></td>
+                      <td>Programación 1</td>
+                      <td>Dic 2013</td>
+                      <td>Confirmado</td>
+                    </tr>
+                    <tr>
+                      <td><a href="no_implementado.html">555</a></td>
+                      <td>Programación 1</td>
+                      <td>Jul 2013</td>
+                      <td>Reprobado</td>
+                    </tr>
+                    <tr>
+                      <td><a href="no_implementado.html">5676</a></td>
+                      <td>Progamación 4</td>
+                      <td>Jul 2013</td>
+                      <td>Aprobado 11</td>
+                    </tr>
+                    <tr>
+                      <td><a href="no_implementado.html">8574</a></td>
+                      <td>Programación 3</td>
+                      <td>Dic 2012</td>
+                      <td>Aprobado 3</td>
+                    </tr>
+                    <tr>
+                      <td><a href="no_implementado.html">4521</a></td>
+                      <td>Lógica</td>
+                      <td>Dic 2012</td>
+                      <td>Aprobado 6</td>
+                    </tr>
+                    <tr>
+                      <td><a href="no_implementado.html">56456</a></td>
+                      <td>Cálculo 2</td>
+                      <td>Dic 2012</td>
+                      <td>Reprobado</td>
+                    </tr>
+                    <tr>
+                      <td><a href="no_implementado.html">56456</a></td>
+                      <td>Cálculo 2</td>
+                      <td>Jul 2011</td>
+                      <td>Reprobado</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <ul class="pager">
+                  <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
+                  <li class="next"><a href="#">Viejo &rarr;</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- HABILITADOS -->
+          <div class="tab-pane" id="habilitados">
+            <div class="container toppaddingsmall">
+              
+              <div class="row">
+                <div class="input-group"> <span class="input-group-addon">Filtro</span>
+                <input id="filter2" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
+                </div>
+              </div>
+              
+              <div class="row toppaddingsmall">         
+                <table class="table table-responsive table-hover">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>#</th>
+                      <th>Nombre</th>
+                      <th>Fecha de exámen</th>
+                      <th>Fin de inscripción</th>
+                      <th>Inscriptos</th>
+                    </tr>
+                  </thead>
+                  <tbody class="searchable2">
+                    <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td>Interoperabilidad</td>
+                      <td>Lun 13 Jul 08:00</td>
+                      <td>15/03/2014</td>
+                      <td>180</td>
+                    </tr>
+                    <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a href="perfil_materia.html">5635</a></td>
+                      <td>BUTIA: Robótica educativa</td>
+                      <td>Jue 16 Jul 14:00</td>
+                      <td>11/03/2014</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a href="perfil_materia.html">145</a></td>
+                      <td>Cálculo 3</td>
+                      <td>Mar 21 Jul 08:00</td>
+                      <td>05/03/2014</td>
+                      <td>150</td>
+                    </tr>
+                    <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a href="perfil_materia.html">9855</a></td>
+                      <td>Control de calidad</td>
+                      <td>Sáb 25 Jul 08:00</td>
+                      <td>23/03/2014</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a href="perfil_materia.html">1236</a></td>
+                      <td>Programación 3</td>
+                      <td>Vier 17 Jul 09:00</td>
+                      <td>2/04/2014</td>
+                      <td>59</td>
+                    </tr>
+                     <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a href="perfil_materia.html">4952</a></td>
+                      <td>Programacíon lógica</td>
+                      <td>Lun 13 Jul 08:00</td>
+                      <td>29/03/2014</td>
+                      <td>152</td>
+                    </tr>
+                     <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a href="perfil_materia.html">1256</a></td>
+                      <td>Seminario de Ingeniería Biomédica</td>
+                      <td>Mar 21 Jul 18:00</td>
+                      <td>08/03/2014</td>
+                      <td>198</td>
+                    </tr>
+                     <tr>
+                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a href="perfil_materia.html">875</a></td>
+                      <td>Teoría de Lenguajes</td>
+                      <td>Mar 21 Jul 08:00</td>
+                      <td>12/03/2014</td>
+                      <td>898</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <ul class="pager">
+                  <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
+                  <li class="next"><a href="#">Viejo &rarr;</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- TODOS -->
+          <div class="tab-pane" id="todos">
+               <div class="container toppaddingsmall">
+              <div class="row">
+                <div class="input-group"> <span class="input-group-addon">Filtro</span>
+                <input id="filter3" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
+                </div>
+              </div>
+              <div class="row toppaddingsmall">         
+<table class="table table-responsive table-hover">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Nombre</th>
+                      <th>Fecha de exámen</th>
+                      <th>Fin de inscripción</th>
+                      <th>Inscriptos</th>
+                    </tr>
+                  </thead>
+                  <tbody class="searchable2">
+                    <tr>
+                      <td><a href="perfil_materia.html">4635</a></td>
+                      <td>Interoperabilidad</td>
+                      <td>Lun 13 Jul 08:00</td>
+                      <td>15/03/2014</td>
+                      <td>180</td>
+                    </tr>
+                    <tr>
+                      <td><a href="perfil_materia.html">5635</a></td>
+                      <td>BUTIA: Robótica educativa</td>
+                      <td>Jue 16 Jul 14:00</td>
+                      <td>11/03/2014</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td><a href="perfil_materia.html">145</a></td>
+                      <td>Cálculo 3</td>
+                      <td>Mar 21 Jul 08:00</td>
+                      <td>05/03/2014</td>
+                      <td>150</td>
+                    </tr>
+                    <tr>
+                      <td><a href="perfil_materia.html">9855</a></td>
+                      <td>Control de calidad</td>
+                      <td>Sáb 25 Jul 08:00</td>
+                      <td>23/03/2014</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td><a href="perfil_materia.html">1236</a></td>
+                      <td>Programación 3</td>
+                      <td>Vier 17 Jul 09:00</td>
+                      <td>2/04/2014</td>
+                      <td>59</td>
+                    </tr>
+                     <tr>
+                      <td><a href="perfil_materia.html">4952</a></td>
+                      <td>Programacíon lógica</td>
+                      <td>Lun 13 Jul 08:00</td>
+                      <td>29/03/2014</td>
+                      <td>152</td>
+                    </tr>
+                     <tr>
+                      <td><a href="perfil_materia.html">1256</a></td>
+                      <td>Seminario de Ingeniería Biomédica</td>
+                      <td>Mar 21 Jul 18:00</td>
+                      <td>08/03/2014</td>
+                      <td>198</td>
+                    </tr>
+                     <tr>
+                      <td><a href="perfil_materia.html">875</a></td>
+                      <td>Teoría de Lenguajes</td>
+                      <td>Mar 21 Jul 08:00</td>
+                      <td>12/03/2014</td>
+                      <td>898</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="pager">
+                  <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
+                  <li class="next"><a href="#">Viejo &rarr;</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+        </div>
+      </div>
+    </div> <!-- container -->
+    
+
+
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel">Se a realizado la inscripción</h4>
+          </div>
+          <div class="modal-body">
+            Puede desistir desde Mis Cursos.<br>
+            Su codigo de inscripción es 112323553355.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default">Aceptar</button>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="container toppaddingsmall">
-      <div class="row">
-        <table class="table table-responsive table-hover">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Nombre</th>
-              <th>Fecha</th>
-              <th>Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="iterpercomp.thml">4635</a></td>
-              <td>GAL 1</td>
-              <td>Julio 2010</td>
-              <td>Espera de resultado</td>
-            </tr>
-            <tr>
-              <td><a href="no_implementado.html">56456</a></td>
-              <td>GAL 2</td>
-              <td>Julio 2013</td>
-              <td>Espera de confirmación</td>
-            </tr>
-            <tr>
-              <td><a href="no_implementado.html">45155</a></td>
-              <td>Sistemas Operativos</td>
-              <td>Diciembre 2012</td>
-              <td>Aprobado 10</td>
-            </tr>
-            <tr>
-              <td><a href="no_implementado.html">56456</a></td>
-              <td>Redes de computadoras</td>
-              <td>Febrero 2012</td>
-              <td>Aprobado 11</td>
-            </tr>
-            <tr>
-              <td><a href="no_implementado.html">56456</a></td>
-              <td>Física 1</td>
-              <td>Febrero 2012</td>
-              <td>Aprobado 10</td>
-            </tr>
-            <tr>
-              <td><a href="no_implementado.html">56456</a></td>
-              <td>Lógica</td>
-              <td>Julio 2012</td>
-              <td>Aprobado 10</td>
-            </tr>
-            <tr>
-              <td><a href="no_implementado.html">56456</a></td>
-              <td>Cálculo 2</td>
-              <td>Diciembre 2009</td>
-              <td>Reprobado 0</td>
-            </tr>
-            <tr>
-              <td><a href="no_implementado.html">56456</a></td>
-              <td>Cálculo 2</td>
-              <td>Julio 2010</td>
-              <td>Aprobado 5</td>
-            </tr>
-            <tr>
-              <td><a href="no_implementado.html">56456</a></td>
-              <td>Cálculo 1</td>
-              <td>Febrero 2009</td>
-              <td>Aprobado 10</td>
-            </tr>
-          </tbody>
-        </table>
-
-
-        <ul class="pager">
-          <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
-          <li class="next"><a href="#">Viejo &rarr;</a></li>
-        </ul>
-      </div>
-    </div>
-
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -168,6 +405,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/typeahead.bundle.min.js"></script>
     <script src="js/typeahead.jquery.min.js"></script>
+
+
+
+
 
      <script type="text/javascript">
       var substringMatcher = function(strs) {
@@ -194,7 +435,7 @@
         };
       };
 
-      var states = ['Cálculo 1', 'Cálculo 2', 'Cálculo 3', 'Interacción persona-computadora', 'Sistemas Operativos', 'GAL 1','Sistemas Operativos', 'Mis Cursos','Todos los Cursos','Inscribirse a Curso','Desistir de Curso', 'Mis Examenes','Calendario de Examenes','Inscribirse a Examen','Desistir de Examen','Ayuda'
+      var states = ['Cálculo 1', 'Cálculo 2', 'Cálculo 3', 'Interacción persona-computadora', 'Sistemas Operativos', 'GAL 1','Sistemas Operativos', 'Ingeniería civil: plan 1947','Ingeniería eléctrica: plan 1947','Ingeniería en computación: plan 1947', 'Mis Cursos','Todos los Cursos','Inscribirse a Curso','Desistir de Curso', 'Mis Examenes','Calendario de Examenes','Inscribirse a Examen','Desistir de Examen','Ayuda'
       ];
 
       $('#the-basics .typeahead').typeahead({
@@ -208,5 +449,96 @@
         source: substringMatcher(states)
       });
      </script>
+
+
+
+
+ <script type="text/javascript">
+
+// Javascript to enable link to tab
+var hash = document.location.hash;
+var prefix = "tab_";
+if (hash) {
+    $('.btn-group label[href='+hash.replace(prefix,"")+']').tab('show');
+    $('.btn-group label[href='+hash.replace(prefix,"")+']').button('toggle');
+} 
+
+// Change hash for page-reload
+$('.btn-group label').on('shown', function (e) {
+    window.location.hash = e.target.hash.replace("#", "#" + prefix);
+});
+
+</script>    
+
+
+
+ <script type="text/javascript">
+//para el filtro
+$(document).ready(function () {
+
+    (function ($) {
+
+        $('#filter1').keyup(function () {
+
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable1 tr').hide();
+            $('.searchable1 tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+
+        })
+
+    }(jQuery));
+
+});
+
+//para el filtro
+$(document).ready(function () {
+
+    (function ($) {
+
+        $('#filter2').keyup(function () {
+
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable2 tr').hide();
+            $('.searchable2 tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+
+        })
+
+    }(jQuery));
+
+});
+
+
+
+
+
+//para el filtro
+$(document).ready(function () {
+
+    (function ($) {
+
+        $('#filter3').keyup(function () {
+
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable3 tr').hide();
+            $('.searchable3 tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+
+        })
+
+    }(jQuery));
+
+});
+
+
+
+</script>    
+
+
+
   </body>
 </html>
