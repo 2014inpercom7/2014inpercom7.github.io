@@ -1,255 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SGB - Cursos - Interacción persona-computadora</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SGB - Cursos - Interacción persona-computadora</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/jquery.stickyalert.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery.stickyalert.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css">
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+      <![endif]-->
+    </head>
+    <body>
 
-    <!--barra de navegacion -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+      <!--barra de navegacion -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
 
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand " href="index.html">SGB</a>
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand " href="index.html">SGB</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <form class="navbar-form navbar-left navbar-input-group" role="search" style="z-index:11000">
+                <div class="form-group"  id="the-basics">
+                  <input type="text" class="form-control typeahead" placeholder="Buscar">
+                </div>
+                <button type="submit" class="btn btn-default">Ir</button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="mi_carrera.html">Mi Carrera</a></li>
+                <li><a href="mis_cursos.html">Cursos</a></li>
+                <li><a href="mis_examenes.html">Exámenes</a></li>    
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span> Tomás
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="mi_perfil.html">Ver perfil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="home.html">Salir</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </div>
+      </nav>
+
+
+
+
+
+
+      <div class="container toppaddingsmall">
+
+        <!--ruta -->
+        <div class="row">
+          <ol class="breadcrumb">
+            <li><a href="mi_perfil.thml">Home</a></li>
+            <li><a href="mis_cursos.html#todos"> Cursos </a></li>
+            <li class="active">Interacción persona-computadora</li>
+          </ol>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="page-header">Interacción persona-computadora <small>(En curso)</small></h1>    
           </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left navbar-input-group" role="search" style="z-index:11000">
-              <div class="form-group"  id="the-basics">
-                <input type="text" class="form-control typeahead" placeholder="Buscar">
-              </div>
-              <button type="submit" class="btn btn-default">Ir</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="mi_carrera.html">Mi Carrera</a></li>
-              <li><a href="mis_cursos.html">Cursos</a></li>
-              <li><a href="mis_examenes.html">Exámenes</a></li>    
-              
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="glyphicon glyphicon-user"></span> Tomás
-                  <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="mi_perfil.hml">Ver perfil</a></li>
-                  <li class="divider"></li>
-                  <li><a href="home.html">Salir</a></li>
-                </ul>
-              </li>
-
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </div>
-    </nav>
-
-
-    
-
-
-  
-    <div class="container">
-
-      <!--ruta -->
-      <div class="row">
-        <ol class="breadcrumb">
-          <li><a href="mi_perfil.thml">Home</a></li>
-          <li><a href="mis_cursos.html#todos"> Cursos </a></li>
-          <li class="active">Interacción persona-computadora</li>
-        </ol>
-      </div>
-    
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="page-header">Interacción persona-computadora <small>(En curso)</small></h1>    
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <dl class="dl-horizontal">
-            <dt>Identificador del curso</dt>
-            <dd>54338</dd>
-            <dt>Nombre</dt>
-            <dd>Interacción persona-computadora</dd>
-            <dt>Créditos</dt>
-            <dd>8</dd>
-            <dt>Período</dt>
-            <dd>1º semestre</dd>
-            <dt>Duración</dt>
-            <dd>13 semanas</dd>
-            <dt>Cupo</dt>
-            <dd>40 estudiantes</dd>
-            <dt>Docente</dt>
-            <dd>Tomás Laurenzo</dd>            
-            <dt>Enlaces de interés</dt>
-            <dd><a href="http://www.fing.edu.uy/inco/cursos/inpercom/">Web del curso</a></dd>
-            <dd><a href="news://news.fing.edu.uy/fing.cursos.inpercom">Newsgroup</a></dd>
-          </dl>
-        </div>
-         <div class="col-xs-12 col-sm-6">
-          <dl>
-            <dt>Información adicional</dt>
-            <dd>
-              Interacción Persona-Computadora pretende que el estudiante adquiera nociones básicas sobre diseño de interacción, diseño centrado en el usuario, usabilidad, metodologías de evaluación de interfaces. El temario abarca desde la comprensión a grandes rasgos de los límites perceptivos y cognitivos del ser humano hasta el estudio de modelos de proceso (de diseño de interacción) centrados en el usuario.
-              La aplicación práctica de estos conocimientos es enormemente amplia y variada: desarrollo de aplicaciones web centradas en el usuario; desarrollo de aplicaciones accesibles y transculturales; diseño "libre de barreras" y tecnología asistiva para personas discapacitadas; diseño universal; diseño de juguetes interactivos orientados a complementar la educación inicial, etc. Por otro lado, se trata de un terreno fértil de investigación y en permanente crecimiento.
-              Algunos tópicos cubiertos en el curso:
-              Percepción, canales de entrada y salida, visualización, métodos cuantitativos de evaluación de interfaces, ingeniería cognitiva, affordances, periféricos, diseño centrado en el usuario, patrones de diseño de interfaces... y más.   
-            </dd>
-          </dl>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <dl class="dl-horizontal">
+              <dt>Identificador del curso</dt>
+              <dd>54338</dd>
+              <dt>Nombre</dt>
+              <dd>Interacción persona-computadora</dd>
+              <dt>Créditos</dt>
+              <dd>8</dd>
+              <dt>Período</dt>
+              <dd>1º semestre</dd>
+              <dt>Duración</dt>
+              <dd>13 semanas</dd>
+              <dt>Cupo</dt>
+              <dd>40 estudiantes</dd>
+              <dt>Docente</dt>
+              <dd>Tomás Laurenzo</dd>            
+              <dt>Enlaces de interés</dt>
+              <dd><a href="http://www.fing.edu.uy/inco/cursos/inpercom/">Web del curso</a></dd>
+              <dd><a href="news://news.fing.edu.uy/fing.cursos.inpercom">Newsgroup</a></dd>
+            </dl>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <dl>
+              <dt>Información adicional</dt>
+              <dd>
+                Interacción Persona-Computadora pretende que el estudiante adquiera nociones básicas sobre diseño de interacción, diseño centrado en el usuario, usabilidad, metodologías de evaluación de interfaces. El temario abarca desde la comprensión a grandes rasgos de los límites perceptivos y cognitivos del ser humano hasta el estudio de modelos de proceso (de diseño de interacción) centrados en el usuario.
+                La aplicación práctica de estos conocimientos es enormemente amplia y variada: desarrollo de aplicaciones web centradas en el usuario; desarrollo de aplicaciones accesibles y transculturales; diseño "libre de barreras" y tecnología asistiva para personas discapacitadas; diseño universal; diseño de juguetes interactivos orientados a complementar la educación inicial, etc. Por otro lado, se trata de un terreno fértil de investigación y en permanente crecimiento.
+                Algunos tópicos cubiertos en el curso:
+                Percepción, canales de entrada y salida, visualización, métodos cuantitativos de evaluación de interfaces, ingeniería cognitiva, affordances, periféricos, diseño centrado en el usuario, patrones de diseño de interfaces... y más.   
+              </dd>
+            </dl>
             
+          </div>
+        </div>
+
+        <div class="row toppaddingsmall">
+          <div class="col-xs-12"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading">Próximas actividades</div>
+              <div class="panel-body">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Actividad</th>
+                      <th>Fecha de finalización</th>
+                      <th>Estado</th>
+                      <th>Posible acción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Inscripciones a exámen</td>
+                      <td>19 Jul 2014</td>
+                      <td>habilitadas</td>
+                      <td><a href="">Inscribirse</a></td>
+                    </tr>
+                    <tr>
+                      <td>Inscripciones a curso</td>
+                      <td>15 Mar 2014</td>
+                      <td>Finalizado</td>
+                      <td><a href="">Desistir</a></td>
+                    </tr>
+                  </tbody>
+                </table>  
+              </div>
+            </div>              
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12"> 
+            <div class="panel panel-danger">
+              <div class="panel-heading">Previas <small> <a href="img/previas.png">ver árbol de previas</a></small></div>
+              <div class="panel-body">
+               <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Actividad Previa</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="">5125</a></td>
+                    <td>Programación 4</td>
+                    <td>Examen</td>
+                  </tr>
+                </tbody>
+              </table>  
+            </div>
+          </div>
         </div>
       </div>
-      
+
+
+
       <div class="row">
-        <div class="col-xs-12">     
-        <h2 id="forms-example">Próximas actividades</h2>    
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Actividad</th>
-                <th>Fecha de finalización</th>
-                <th>Estado</th>
-                <th>Posible acción</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Inscripciones a exámen</td>
-                <td>19 Jul 2014</td>
-                <td>habilitadas</td>
-                <td><a href="">Inscribirse</a></td>
-              </tr>
-              <tr>
-                <td>Inscripciones a curso</td>
-                <td>15 Mar 2014</td>
-                <td>Finalizado</td>
-                <td><a href="">Desistir</a></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="col-xs-12 col-sm-6"> 
+          <div class="panel  panel-default">
+            <div class="panel-heading">El Curso aprobado de la materia es previo de:</div>
+            <div class="panel-body">
+             <table class="table table-hover ">
+              <thead>
+                <tr>
+                  <th>Actividad</th>
+                  <th>#</th>
+                  <th>Nombre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Curso</td>
+                  <td><a href="">5125</a></td>
+                  <td>Taller de interaccón persona computadora</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
-<div class="row">
 
 
-        <div class="col-xs-12">     
-        <h2 id="forms-example">Previas <small> <a href="img/previas.png">ver árbol de previas</a></small></h2>    
-          <table class="table table-hover table-bordered">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Actividad Previa</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="">5125</a></td>
-                <td>Programación 4</td>
-                <td>Examen</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="col-xs-12 col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">La materia pertenece al grupo <a href="">1749-int.comp.graf. o persona comp.</a> que es previo de:</div>
+          <div class="panel-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Actividad</th>
+                  <th>#</th>
+                  <th>Nombre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Curso</td>
+                  <td><a href="">1304</a></td>
+                  <td>Tecnologías Interactivas y videojuegos</td>
+                </tr>
+              </tbody>
+            </table>  
+          </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>Es previa de</h2>    
-          <h4>El Curso aprobado de la materia es previo de:</h4>    
-          <table class="table table-hover table-bordered">
-            <thead>
-              <tr>
-                <th>Actividad</th>
-                <th>#</th>
-                <th>Nombre</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Curso</td>
-                <td><a href="">5125</a></td>
-                <td>Taller de interaccón persona computadora</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h4>La materia pertenece al grupo <a href="">1749-int.comp.graf. o persona comp.</a> que es previo de:</h4>    
-          <table class="table table-hover table-bordered">
-            <thead>
-              <tr>
-                <th>Actividad</th>
-                <th>#</th>
-                <th>Nombre</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Curso</td>
-                <td><a href="">1304</a></td>
-                <td>Tecnologías Interactivas y videojuegos</td>
-              </tr>
-            </tbody>
-          </table>
-        </div> 
-      </div>
-        
+      </div> 
+    </div>
 
 
-      
-      
-      
-
-        
-
-    </div> <!-- container -->
-    
+  </div> <!-- container -->
 
 
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/typeahead.bundle.min.js"></script>
-    <script src="js/typeahead.jquery.min.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/typeahead.bundle.min.js"></script>
+  <script src="js/typeahead.jquery.min.js"></script>
 
 
 
 
 
-     <script type="text/javascript">
-      var substringMatcher = function(strs) {
-        return function findMatches(q, cb) {
-          var matches, substringRegex;
+  <script type="text/javascript">
+  var substringMatcher = function(strs) {
+    return function findMatches(q, cb) {
+      var matches, substringRegex;
 
           // an array that will be populated with substring matches
           matches = [];
@@ -284,9 +296,9 @@
         displayKey: 'value',
         source: substringMatcher(states)
       });
-     </script>
+      </script>
 
- 
 
-  </body>
-</html>
+
+    </body>
+    </html>
