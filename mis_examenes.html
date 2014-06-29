@@ -106,7 +106,7 @@
         <div id="my-tab-content" class="tab-content">
 
           <!-- MIS EXAMENES -->
-          <div class="tab-pane active" id="mis">
+          <div class="tab-pane fade in active" id="mis">
             <div class="container toppaddingsmall">
               <div class="row">
                 <div class="input-group"> <span class="input-group-addon">Filtro</span>
@@ -185,7 +185,7 @@
 
 
           <!-- HABILITADOS -->
-          <div class="tab-pane" id="habilitados">
+          <div class="tab-pane fade" id="habilitados">
             <div class="container toppaddingsmall">
               
               <div class="row">
@@ -208,7 +208,7 @@
                   </thead>
                   <tbody class="searchable2">
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">4635</a></td>
                       <td>Interoperabilidad</td>
                       <td>Lun 13 Jul 08:00</td>
@@ -216,7 +216,7 @@
                       <td>180</td>
                     </tr>
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">5635</a></td>
                       <td>BUTIA: Robótica educativa</td>
                       <td>Jue 16 Jul 14:00</td>
@@ -224,7 +224,7 @@
                       <td>10</td>
                     </tr>
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">145</a></td>
                       <td>Cálculo 3</td>
                       <td>Mar 21 Jul 08:00</td>
@@ -232,7 +232,7 @@
                       <td>150</td>
                     </tr>
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">9855</a></td>
                       <td>Control de calidad</td>
                       <td>Sáb 25 Jul 08:00</td>
@@ -240,7 +240,7 @@
                       <td>9</td>
                     </tr>
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">1236</a></td>
                       <td>Programación 3</td>
                       <td>Vier 17 Jul 09:00</td>
@@ -248,7 +248,7 @@
                       <td>59</td>
                     </tr>
                      <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">4952</a></td>
                       <td>Programacíon lógica</td>
                       <td>Lun 13 Jul 08:00</td>
@@ -256,7 +256,7 @@
                       <td>152</td>
                     </tr>
                      <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">1256</a></td>
                       <td>Seminario de Ingeniería Biomédica</td>
                       <td>Mar 21 Jul 18:00</td>
@@ -264,7 +264,7 @@
                       <td>198</td>
                     </tr>
                      <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">875</a></td>
                       <td>Teoría de Lenguajes</td>
                       <td>Mar 21 Jul 08:00</td>
@@ -285,7 +285,7 @@
 
 
           <!-- TODOS -->
-          <div class="tab-pane" id="todos">
+          <div class="tab-pane fade" id="todos">
                <div class="container toppaddingsmall">
               <div class="row">
                 <div class="input-group"> <span class="input-group-addon">Filtro</span>
@@ -293,7 +293,7 @@
                 </div>
               </div>
               <div class="row toppaddingsmall">         
-<table class="table table-responsive table-hover">
+                <table class="table table-responsive table-hover">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -303,7 +303,7 @@
                       <th>Inscriptos</th>
                     </tr>
                   </thead>
-                  <tbody class="searchable2">
+                  <tbody class="searchable3">
                     <tr>
                       <td><a href="perfil_materia.html">4635</a></td>
                       <td>Interoperabilidad</td>
@@ -380,19 +380,20 @@
 
 
 
+
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title text-center" id="myModalLabel">Se a realizado la inscripción</h4>
+            <h4 class="modal-title " id="myModalLabel">Se a realizado la inscripción al examen de Interacción persona-computadora</h4>
           </div>
           <div class="modal-body">
-            Puede desistir desde Mis Cursos.<br>
-            Su codigo de inscripción es 112323553355.
+            Su codigo de inscripción es 98323553355.<br>
+            Puede desistir desde <a href="mis_examenes.html#mis">Mis exámenes</a>.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default">Aceptar</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
           </div>
         </div>
       </div>
@@ -512,9 +513,6 @@ $(document).ready(function () {
 });
 
 
-
-
-
 //para el filtro
 $(document).ready(function () {
 
@@ -535,6 +533,16 @@ $(document).ready(function () {
 });
 
 
+
+/*** ELIMINAR FILA ***/
+ function delRow()
+  {
+    var current = window.event.srcElement;
+    //here we will delete the line
+    while ( (current = current.parentElement)  && current.tagName !="TR");
+         current.parentElement.removeChild(current);
+         $('#myModal').modal('show'); 
+  }
 
 </script>    
 

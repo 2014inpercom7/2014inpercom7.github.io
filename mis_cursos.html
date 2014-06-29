@@ -8,7 +8,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.stickyalert.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,25 +67,24 @@
       </div>
     </nav>
 
+<div id="alert-container"></div>
+
+    
+
+
+  
     <div class="container">
+      <!--ruta -->
       <div class="row">
         <ol class="breadcrumb">
         <li><a href="mi_perfil.thml">Home</a></li>
         <li class="active">Cursos</li>
         </ol>
       </div>
-    </div>
-    
 
 
 
-
-
-
-
-    <div class="container">
-      <div id="content">
-        
+      <div id="content">      
         <!-- tabs  -->
         <div class="row">
           <div class="col-xs-12  text-center">
@@ -100,13 +101,27 @@
             </div>
           </div>
         </div>
+<!--
+    <div class="container">
 
+        <div class="row">
+          
+          <div class="alert alert-success fade in" role="alert" style="display: none">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            Se ah inscripto correctamente a <strong>4635 Interacción persona-computadora</strong>
+            , su código de inscripcion es 565485. 
+            <a href="#" class="alert-link">Deshacer</a>
+          </div>
+
+        </div>
+      </div>
+    -->
 
         <!-- contenido  -->
         <div id="my-tab-content" class="tab-content">
 
           <!-- MIS CURSOS -->
-          <div class="tab-pane active" id="mis">
+          <div class="tab-pane fade in active" id="mis">
             <div class="container toppaddingsmall">
               <div class="row">
                 <div class="input-group"> <span class="input-group-addon">Filtro</span>
@@ -185,7 +200,7 @@
 
 
           <!-- HABILITADOS -->
-          <div class="tab-pane" id="habilitados">
+          <div class="tab-pane fade" id="habilitados">
             <div class="container toppaddingsmall">
               
               <div class="row">
@@ -195,7 +210,7 @@
               </div>
               
               <div class="row toppaddingsmall">         
-                <table class="table table-responsive table-hover">
+                <table class="table table-responsive table-hover" id="misTable">
                   <thead>
                     <tr>
                       <th></th>
@@ -207,56 +222,56 @@
                   </thead>
                   <tbody class="searchable2">
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a id='anadir'><span class="glyphicon glyphicon-plus"></span></a></td>
                       <td><a href="perfil_materia.html">4635</a></td>
                       <td>Algoritmos evolutivos</td>
                       <td>15/03/2014</td>
                       <td>180</td>
                     </tr>
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">5635</a></td>
                       <td>BUTIA: Robótica educativa</td>
                       <td>11/03/2014</td>
                       <td>10</td>
                     </tr>
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">145</a></td>
                       <td>Cálculo 3</td>
                       <td>05/03/2014</td>
                       <td>150</td>
                     </tr>
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">9855</a></td>
                       <td>Control de calidad</td>
                       <td>23/03/2014</td>
                       <td>9</td>
                     </tr>
                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">1236</a></td>
                       <td>Programación 4</td>
                       <td>2/04/2014</td>
                       <td>59</td>
                     </tr>
                      <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">4952</a></td>
                       <td>Programacíon lógica</td>
                       <td>29/03/2014</td>
                       <td>152</td>
                     </tr>
                      <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">1256</a></td>
                       <td>Seminario de Ingeniería Biomédica</td>
                       <td>08/03/2014</td>
                       <td>198</td>
                     </tr>
                      <tr>
-                      <td><a><span class="glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                       <td><a href="perfil_materia.html">875</a></td>
                       <td>Teoría de Lenguajes</td>
                       <td>12/03/2014</td>
@@ -276,7 +291,7 @@
 
 
           <!-- TODOS -->
-          <div class="tab-pane" id="todos">
+          <div class="tab-pane fade" id="todos">
                <div class="container toppaddingsmall">
               <div class="row">
                 <div class="input-group"> <span class="input-group-addon">Filtro</span>
@@ -386,14 +401,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title text-center" id="myModalLabel">Se a realizado la inscripción</h4>
+            <h4 class="modal-title " id="myModalLabel">Se a realizado la inscripción</h4>
           </div>
           <div class="modal-body">
-            Puede desistir desde Mis Cursos.<br>
-            Su codigo de inscripción es 112323553355.
+            Su codigo de inscripción es 98323553355.<br>
+            Puede desistir desde <a href="mis_cursos.html#mis">Mis Cursos</a>.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default">Aceptar</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
           </div>
         </div>
       </div>
@@ -406,6 +421,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/typeahead.bundle.min.js"></script>
     <script src="js/typeahead.jquery.min.js"></script>
+    <script src="js/jquery.stickyalert.js"></script>
 
 
 
@@ -533,9 +549,51 @@ $(document).ready(function () {
 });
 
 
+/****/
+
+// Wait for the page to load first
+window.onload = function() {
+
+  //Get a reference to the link on the page
+  // with an id of "mylink"
+  var a = document.getElementById("anadir");
+
+  //Set code to run when the link is clicked
+  // by assigning a function to "onclick"
+  a.onclick = function() {
+
+    // Your code here...
+    $('#alert-container').stickyalert({
+      barFontColor:'#eee',
+      barColor:'#222',
+      barFontSize: '1.6rem',
+      barText:'Se ah inscripto a Interacción persona-computadora satisfactoriamente, haca click aqui para desistir',
+      barTextLink:'#',
+      cookieRememberDays: '2'
+    });
+    //If you don't want the link to actually 
+    // redirect the browser to another page,
+    // "google.com" in our example here, then
+    // return false at the end of this block.
+    // Note that this also prevents event bubbling,
+    // which is probably what we want here, but won't 
+    // always be the case.
+    return false;
+  }
+}
 
 
 
+
+/*** ELIMINAR FILA ***/
+ function delRow()
+  {
+    var current = window.event.srcElement;
+    //here we will delete the line
+    while ( (current = current.parentElement)  && current.tagName !="TR");
+         current.parentElement.removeChild(current);
+         $('#myModal').modal('show'); 
+  }
 </script>    
 
 
