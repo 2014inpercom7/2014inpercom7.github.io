@@ -1,392 +1,394 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SGB - Exámenes</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SGB - Exámenes</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+      <![endif]-->
+    </head>
+    <body>
 
-    <!--barra de navegacion -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+      <!--barra de navegacion -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
 
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand " href="index.html">SGB</a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left navbar-input-group" role="search" style="z-index:11000">
-              <div class="form-group"  id="the-basics">
-                <input type="text" class="form-control typeahead" placeholder="Buscar">
-              </div>
-              <button type="submit" class="btn btn-default">Ir</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="mi_carrera.html">Mi Carrera</a></li>
-              <li ><a href="mis_cursos.html">Cursos</a></li>
-              <li class="active"><a href="mis_examenes.html">Exámenes</a></li>    
-              
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="glyphicon glyphicon-user"></span> Tomás
-                  <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="mi_perfil.html">Ver perfil</a></li>
-                  <li class="divider"></li>
-                  <li><a href="index.html">Salir</a></li>
-                </ul>
-              </li>
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand " href="index.html">SGB</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <form class="navbar-form navbar-left navbar-input-group" role="search" style="z-index:11000">
+                <div class="form-group"  id="the-basics">
+                  <input type="text" class="form-control typeahead" placeholder="Buscar">
+                </div>
+                <button type="submit" class="btn btn-default">Ir</button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="mi_carrera.html">Mi Carrera</a></li>
+                <li ><a href="mis_cursos.html">Cursos</a></li>
+                <li class="active"><a href="mis_examenes.html">Exámenes</a></li>    
 
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </div>
-    </nav>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span> Tomás
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="mi_perfil.html">Ver perfil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html">Salir</a></li>
+                  </ul>
+                </li>
 
-    <div class="container toppaddingsmall">
-      <div class="row">
-        <ol class="breadcrumb">
-        <li><a href="mi_perfil.thml">Home</a></li>
-        <li class="active">Exámenes</li>
-        </ol>
-      </div>
-    </div>
-    
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </div>
+      </nav>
 
-
-
-
-
-
-
-    <div class="container">
-      <div id="content">
-        
-        <!-- tabs  -->
+      <div class="container toppaddingsmall">
         <div class="row">
-          <div class="col-xs-12  text-center">
-            <div class="btn-group" data-toggle="buttons">
-              <label data-toggle="tab"  href="#mis" class="btn btn-default active" >
-                <input type="radio" name="options" id="option1">Mis exámenes</input>
-              </label>
-              <label  data-toggle="tab"  href="#habilitados" class="btn btn-default">
-                <input type="radio" name="options" id="option2">Inscribirse</input>
-              </label>
-              <label  data-toggle="tab"  href="#todos" class="btn btn-default">
-                <input type="radio" name="options" id="option3">Todos <span class="hidden-xs">los exámenes</span></input>
-              </label>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- contenido  -->
-        <div id="my-tab-content" class="tab-content">
-
-          <!-- MIS EXAMENES -->
-          <div class="tab-pane fade in active" id="mis">
-            <div class="container toppaddingsmall">
-              <div class="row">
-                <div class="input-group"> <span class="input-group-addon">Filtro</span>
-                <input id="filter1" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
-                </div>
-              </div>
-              <div class="row toppaddingsmall">
-                <table class="table table-responsive table-hover">
-                  <thead>
-                    <tr>
-                      <th>Materia</th>
-                      <th>Fecha</th>
-                      <th>Estado</th>
-                    </tr>
-                  </thead>
-                  <tbody class="searchable1">
-                    <tr>
-                      <td><a href="perfil_materia.html">Interacción persona-computadora</a></td>
-                      <td>Jun 2014</td>
-                      <td>Esperando confirmación <a href="">(Desistir)</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Programación 1</a></td>
-                      <td>Dic 2013</td>
-                      <td>Confirmado</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Programación 1</a></td>
-                      <td>Jul 2013</td>
-                      <td>Reprobado</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Progamación 4</a></td>
-                      <td>Jul 2013</td>
-                      <td>Aprobado 11</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Programación 3</a></td>
-                      <td>Dic 2012</td>
-                      <td>Aprobado 3</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Lógica</a></td>
-                      <td>Dic 2012</td>
-                      <td>Aprobado 6</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Cálculo 2</a></td>
-                      <td>Dic 2012</td>
-                      <td>Reprobado</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Cálculo 2</a></td>
-                      <td>Jul 2011</td>
-                      <td>Reprobado</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <ul class="pager">
-                  <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
-                  <li class="next"><a href="#">Viejo &rarr;</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- HABILITADOS -->
-          <div class="tab-pane fade" id="habilitados">
-            <div class="container toppaddingsmall">
-              <div class="row">
-                <div class="input-group"> <span class="input-group-addon">Filtro</span>
-                <input id="filter2" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
-                </div>
-              </div>
-              <div class="row toppaddingsmall">         
-                <table class="table table-responsive table-hover">
-                  <thead>
-                    <tr>
-                      <th>Inscribirse</th>
-                      <th>Materia</th>
-                      <th>Fecha</th>
-                      <th>Fin de inscripción</th>
-                      <th>Inscriptos</th>
-                    </tr>
-                  </thead>
-                  <tbody class="searchable2">
-                    <tr>
-                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
-                      <td><a href="perfil_materia.html">Interoperabilidad</a></td>
-                      <td>Lun 13 Jul 08:00</td>
-                      <td>02 Jul</td>
-                      <td>180</td>
-                    </tr>
-                    <tr>
-                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
-                      <td><a href="perfil_materia.html">Butiá: Robótica educativa</a></td>
-                      <td>Jue 16 Jul 14:00</td>
-                      <td>02 Jul</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
-                      <td><a href="perfil_materia.html">Cálculo 3</a></td>
-                      <td>Mar 21 Jul 08:00</td>
-                      <td>02 Jul</td>
-                      <td>150</td>
-                    </tr>
-                    <tr>
-                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
-                      <td><a href="perfil_materia.html">Control de calidad</a></td>
-                      <td>Sáb 25 Jul 08:00</td>
-                      <td>09 Jul</td>
-                      <td>9</td>
-                    </tr>
-                    <tr>
-                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
-                      <td><a href="perfil_materia.html">Programación 3</a></td>
-                      <td>Vier 17 Jul 09:00</td>
-                      <td>09 Jul</td>
-                      <td>59</td>
-                    </tr>
-                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
-                      <td><a href="perfil_materia.html">Programacíon Lógica</a></td>
-                      <td>Lun 13 Jul 08:00</td>
-                      <td>02 Jul</td>
-                      <td>152</td>
-                    </tr>
-                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
-                      <td><a href="perfil_materia.html">Seminario de Ingeniería Biomédica</a></td>
-                      <td>Mar 21 Jul 18:00</td>
-                      <td>09 Jul</td>
-                      <td>198</td>
-                    </tr>
-                     <tr>
-                      <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
-                      <td><a href="perfil_materia.html">Teoría de Lenguajes</a></td>
-                      <td>Mar 21 Jul 08:00</td>
-                      <td>09 Jul</td>
-                      <td>898</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <ul class="pager">
-                  <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
-                  <li class="next"><a href="#">Viejo &rarr;</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- TODOS -->
-          <div class="tab-pane fade" id="todos">
-            <div class="container toppaddingsmall">
-              <div class="row">
-                <div class="input-group"> <span class="input-group-addon">Filtro</span>
-                <input id="filter3" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
-                </div>
-              </div>
-              <div class="row toppaddingsmall">
-                <table class="table table-responsive table-hover">
-                  <thead>
-                    <tr>
-                      <th>Materia</th>
-                      <th>Fecha</th>
-                      <th>Fin de inscripción</th>
-                      <th>Inscriptos</th>
-                    </tr>
-                  </thead>
-                  <tbody class="searchable3">
-                    <tr>
-                      <td><a href="perfil_materia.html">Interoperabilidad</a></td>
-                      <td>Lun 13 Jul 08:00</td>
-                      <td>02 Jul</td>
-                      <td>180</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Butiá: Robótica educativa</a></td>
-                      <td>Jue 16 Jul 14:00</td>
-                      <td>02 Jul</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Cálculo 3</a></td>
-                      <td>Mar 21 Jul 08:00</td>
-                      <td>09 Jul</td>
-                      <td>150</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Control de Calidad</a></td>
-                      <td>Sáb 25 Jul 08:00</td>
-                      <td>09 Jul</td>
-                      <td>9</td>
-                    </tr>
-                    <tr>
-                      <td><a href="perfil_materia.html">Programación 3</a></td>
-                      <td>Vie 17 Jul 09:00</td>
-                      <td>02 Jul</td>
-                      <td>59</td>
-                    </tr>
-                     <tr>
-                      <td><a href="perfil_materia.html">Programacíon Lógica</a></td>
-                      <td>Lun 13 Jul 08:00</td>
-                      <td>02 Jul</td>
-                      <td>152</td>
-                    </tr>
-                     <tr>
-                      <td><a href="perfil_materia.html">Seminario de Ingeniería Biomédica</a></td>
-                      <td>Mar 21 Jul 18:00</td>
-                      <td>09 Jul</td>
-                      <td>198</td>
-                    </tr>
-                     <tr>
-                      <td><a href="perfil_materia.html">Teoría de Lenguajes</a></td>
-                      <td>Mar 21 Jul 08:00</td>
-                      <td>09 Jul</td>
-                      <td>898</td>
-                    </tr>
-                  </tbody>
-                </table>
-				
-                <ul class="pager">
-                  <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
-                  <li class="next"><a href="#">Viejo &rarr;</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-
-          
+          <ol class="breadcrumb">
+            <li><a href="mi_perfil.thml">Home</a></li>
+            <li class="active">Exámenes</li>
+          </ol>
         </div>
       </div>
-    </div> <!-- container -->
-    
 
 
 
 
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title " id="myModalLabel">Se ha realizado la inscripción al examen de Interacción persona-computadora</h4>
+
+
+
+
+      <div class="container">
+        <div id="content">
+
+          <!-- tabs  -->
+          <div class="row">
+            <div class="col-xs-12  text-center">
+              <div class="btn-group" data-toggle="buttons">
+                <label data-toggle="tab"  href="#mis" class="btn btn-default active" >
+                  <input type="radio" name="options" id="option1">Mis exámenes</input>
+                </label>
+                <label  data-toggle="tab"  href="#habilitados" class="btn btn-default">
+                  <input type="radio" name="options" id="option2">Inscribirse</input>
+                </label>
+                <label  data-toggle="tab"  href="#todos" class="btn btn-default">
+                  <input type="radio" name="options" id="option3">Todos <span class="hidden-xs">los exámenes</span></input>
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            Su codigo de inscripción es 983.235.533.555.<br>
-            Puede desistir desde <a href="mis_examenes.html#mis">Mis exámenes</a>.
+
+
+          <!-- contenido  -->
+          <div id="my-tab-content" class="tab-content">
+
+            <!-- MIS EXAMENES -->
+            <div class="tab-pane fade in active" id="mis">
+              <div class="container toppaddingsmall">
+                <div class="row">
+                  <div class="input-group"> <span class="input-group-addon">Filtro</span>
+                    <input id="filter1" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
+                  </div>
+                </div>
+                <div class="row toppaddingsmall">
+                  <table class="table table-responsive table-hover">
+                    <thead>
+                      <tr>
+                        <th>Materia</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody class="searchable1">
+                      <tr>
+                        <td><a href="perfil_materia.html">Interacción persona-computadora</a></td>
+                        <td>Jun 2014</td>
+                        <td>Esperando confirmación <a href="">(Desistir)</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="perfil_materia.html">Programación 1</a></td>
+                        <td>Dic 2013</td>
+                        <td>Confirmado</td>
+                      </tr>
+                      <tr>
+                        <td><a href="perfil_materia.html">Programación 1</a></td>
+                        <td>Jul 2013</td>
+                        <td>Reprobado</td>
+                      </tr>
+                      <tr>
+                        <td><a href="perfil_materia.html">Progamación 4</a></td>
+                        <td>Jul 2013</td>
+                        <td>Aprobado 11</td>
+                      </tr>
+                      <tr>
+                        <td><a href="perfil_materia.html">Programación 3</a></td>
+                        <td>Dic 2012</td>
+                        <td>Aprobado 3</td>
+                      </tr>
+                      <tr>
+                        <td><a href="perfil_materia.html">Lógica</a></td>
+                        <td>Dic 2012</td>
+                        <td>Aprobado 6</td>
+                      </tr>
+                      <tr>
+                        <td><a href="perfil_materia.html">Cálculo 2</a></td>
+                        <td>Dic 2012</td>
+                        <td>Reprobado</td>
+                      </tr>
+                      <tr>
+                        <td><a href="perfil_materia.html">Cálculo 2</a></td>
+                        <td>Jul 2011</td>
+                        <td>Reprobado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <ul class="pager">
+                    <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
+                    <li class="next"><a href="#">Viejo &rarr;</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- HABILITADOS -->
+            <div class="tab-pane fade" id="habilitados">
+              <div class="container toppaddingsmall">
+                <div class="row">
+                  <div class="input-group"> <span class="input-group-addon">Filtro</span>
+                    <input id="filter2" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
+                  </div>
+                </div>
+                <div class="row toppaddingsmall">
+                 <div class="table-responsive">         
+                  <table class="table table-responsive table-hover">
+                    <thead>
+                      <tr>
+                        <th>Inscribirse</th>
+                        <th>Materia</th>
+                        <th>Fecha</th>
+                        <th>Fin de inscripción</th>
+                        <th>Inscriptos</th>
+                      </tr>
+                    </thead>
+                    <tbody class="searchable2">
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Interoperabilidad</a></td>
+                        <td>Lun 13 Jul 08:00</td>
+                        <td>02 Jul</td>
+                        <td>180</td>
+                      </tr>
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Butiá: Robótica educativa</a></td>
+                        <td>Jue 16 Jul 14:00</td>
+                        <td>02 Jul</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Cálculo 3</a></td>
+                        <td>Mar 21 Jul 08:00</td>
+                        <td>02 Jul</td>
+                        <td>150</td>
+                      </tr>
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Control de calidad</a></td>
+                        <td>Sáb 25 Jul 08:00</td>
+                        <td>09 Jul</td>
+                        <td>9</td>
+                      </tr>
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Programación 3</a></td>
+                        <td>Vier 17 Jul 09:00</td>
+                        <td>09 Jul</td>
+                        <td>59</td>
+                      </tr>
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Programacíon Lógica</a></td>
+                        <td>Lun 13 Jul 08:00</td>
+                        <td>02 Jul</td>
+                        <td>152</td>
+                      </tr>
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Seminario de Ingeniería Biomédica</a></td>
+                        <td>Mar 21 Jul 18:00</td>
+                        <td>09 Jul</td>
+                        <td>198</td>
+                      </tr>
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Teoría de Lenguajes</a></td>
+                        <td>Mar 21 Jul 08:00</td>
+                        <td>09 Jul</td>
+                        <td>898</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>         
+
+                    <ul class="pager">
+                      <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
+                      <li class="next"><a href="#">Viejo &rarr;</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- TODOS -->
+              <div class="tab-pane fade" id="todos">
+                <div class="container toppaddingsmall">
+                  <div class="row">
+                    <div class="input-group"> <span class="input-group-addon">Filtro</span>
+                      <input id="filter3" type="text" class="form-control" placeholder="Escriba aqui para buscar...">
+                    </div>
+                  </div>
+                  <div class="row toppaddingsmall">
+                    <table class="table table-responsive table-hover">
+                      <thead>
+                        <tr>
+                          <th>Materia</th>
+                          <th>Fecha</th>
+                          <th>Fin de inscripción</th>
+                          <th>Inscriptos</th>
+                        </tr>
+                      </thead>
+                      <tbody class="searchable3">
+                        <tr>
+                          <td><a href="perfil_materia.html">Interoperabilidad</a></td>
+                          <td>Lun 13 Jul 08:00</td>
+                          <td>02 Jul</td>
+                          <td>180</td>
+                        </tr>
+                        <tr>
+                          <td><a href="perfil_materia.html">Butiá: Robótica educativa</a></td>
+                          <td>Jue 16 Jul 14:00</td>
+                          <td>02 Jul</td>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <td><a href="perfil_materia.html">Cálculo 3</a></td>
+                          <td>Mar 21 Jul 08:00</td>
+                          <td>09 Jul</td>
+                          <td>150</td>
+                        </tr>
+                        <tr>
+                          <td><a href="perfil_materia.html">Control de Calidad</a></td>
+                          <td>Sáb 25 Jul 08:00</td>
+                          <td>09 Jul</td>
+                          <td>9</td>
+                        </tr>
+                        <tr>
+                          <td><a href="perfil_materia.html">Programación 3</a></td>
+                          <td>Vie 17 Jul 09:00</td>
+                          <td>02 Jul</td>
+                          <td>59</td>
+                        </tr>
+                        <tr>
+                          <td><a href="perfil_materia.html">Programacíon Lógica</a></td>
+                          <td>Lun 13 Jul 08:00</td>
+                          <td>02 Jul</td>
+                          <td>152</td>
+                        </tr>
+                        <tr>
+                          <td><a href="perfil_materia.html">Seminario de Ingeniería Biomédica</a></td>
+                          <td>Mar 21 Jul 18:00</td>
+                          <td>09 Jul</td>
+                          <td>198</td>
+                        </tr>
+                        <tr>
+                          <td><a href="perfil_materia.html">Teoría de Lenguajes</a></td>
+                          <td>Mar 21 Jul 08:00</td>
+                          <td>09 Jul</td>
+                          <td>898</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <ul class="pager">
+                      <li class="previous disabled"><a href="#">&larr; Nuevo</a></li>
+                      <li class="next"><a href="#">Viejo &rarr;</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+        </div> <!-- container -->
+
+
+
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title " id="myModalLabel">Se ha realizado la inscripción al examen de Interacción persona-computadora</h4>
+              </div>
+              <div class="modal-body">
+                Su codigo de inscripción es 983.235.533.555.<br>
+                Puede desistir desde <a href="mis_examenes.html#mis">Mis exámenes</a>.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/typeahead.bundle.min.js"></script>
-    <script src="js/typeahead.jquery.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.bundle.min.js"></script>
+        <script src="js/typeahead.jquery.min.js"></script>
 
 
 
 
 
-     <script type="text/javascript">
-      var substringMatcher = function(strs) {
-        return function findMatches(q, cb) {
-          var matches, substringRegex;
+        <script type="text/javascript">
+        var substringMatcher = function(strs) {
+          return function findMatches(q, cb) {
+            var matches, substringRegex;
 
           // an array that will be populated with substring matches
           matches = [];
@@ -421,66 +423,66 @@
         displayKey: 'value',
         source: substringMatcher(states)
       });
-     </script>
+      </script>
 
 
 
 
- <script type="text/javascript">
+      <script type="text/javascript">
 
 // Javascript to enable link to tab
 var hash = document.location.hash;
 var prefix = "tab_";
 if (hash) {
-    $('.btn-group label[href='+hash.replace(prefix,"")+']').tab('show');
-    $('.btn-group label[href='+hash.replace(prefix,"")+']').button('toggle');
+  $('.btn-group label[href='+hash.replace(prefix,"")+']').tab('show');
+  $('.btn-group label[href='+hash.replace(prefix,"")+']').button('toggle');
 } 
 
 // Change hash for page-reload
 $('.btn-group label').on('shown', function (e) {
-    window.location.hash = e.target.hash.replace("#", "#" + prefix);
+  window.location.hash = e.target.hash.replace("#", "#" + prefix);
 });
 
 </script>    
 
 
 
- <script type="text/javascript">
+<script type="text/javascript">
 //para el filtro
 $(document).ready(function () {
 
-    (function ($) {
+  (function ($) {
 
-        $('#filter1').keyup(function () {
+    $('#filter1').keyup(function () {
 
-            var rex = new RegExp($(this).val(), 'i');
-            $('.searchable1 tr').hide();
-            $('.searchable1 tr').filter(function () {
-                return rex.test($(this).text());
-            }).show();
+      var rex = new RegExp($(this).val(), 'i');
+      $('.searchable1 tr').hide();
+      $('.searchable1 tr').filter(function () {
+        return rex.test($(this).text());
+      }).show();
 
-        })
+    })
 
-    }(jQuery));
+  }(jQuery));
 
 });
 
 //para el filtro
 $(document).ready(function () {
 
-    (function ($) {
+  (function ($) {
 
-        $('#filter2').keyup(function () {
+    $('#filter2').keyup(function () {
 
-            var rex = new RegExp($(this).val(), 'i');
-            $('.searchable2 tr').hide();
-            $('.searchable2 tr').filter(function () {
-                return rex.test($(this).text());
-            }).show();
+      var rex = new RegExp($(this).val(), 'i');
+      $('.searchable2 tr').hide();
+      $('.searchable2 tr').filter(function () {
+        return rex.test($(this).text());
+      }).show();
 
-        })
+    })
 
-    }(jQuery));
+  }(jQuery));
 
 });
 
@@ -488,37 +490,37 @@ $(document).ready(function () {
 //para el filtro
 $(document).ready(function () {
 
-    (function ($) {
+  (function ($) {
 
-        $('#filter3').keyup(function () {
+    $('#filter3').keyup(function () {
 
-            var rex = new RegExp($(this).val(), 'i');
-            $('.searchable3 tr').hide();
-            $('.searchable3 tr').filter(function () {
-                return rex.test($(this).text());
-            }).show();
+      var rex = new RegExp($(this).val(), 'i');
+      $('.searchable3 tr').hide();
+      $('.searchable3 tr').filter(function () {
+        return rex.test($(this).text());
+      }).show();
 
-        })
+    })
 
-    }(jQuery));
+  }(jQuery));
 
 });
 
 
 
 /*** ELIMINAR FILA ***/
- function delRow()
-  {
-    var current = window.event.srcElement;
+function delRow()
+{
+  var current = window.event.srcElement;
     //here we will delete the line
     while ( (current = current.parentElement)  && current.tagName !="TR");
-         current.parentElement.removeChild(current);
-         $('#myModal').modal('show'); 
+    current.parentElement.removeChild(current);
+    $('#myModal').modal('show'); 
   }
 
-</script>    
+  </script>    
 
 
 
-  </body>
+</body>
 </html>
