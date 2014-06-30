@@ -13,6 +13,15 @@ body {
 }
 
 
+.img-circle{
+  background-color: #ffffff;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 /***************************************************
   alerta
 **************************************************/
