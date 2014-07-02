@@ -8,9 +8,9 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/jquery.stickyalert.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/style.css">
 
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -194,9 +194,9 @@
                   <th>Inscriptos</th>
                 </tr>
               </thead>
-              <tbody class="searchable2">
+              <tbody class="searchable2"  id="misTablebody">
                 <tr>
-                  <td><a id='anadir'><span class="glyphicon glyphicon-plus"></span></a></td>
+                  <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                   <td><a href="perfil_materia.html">Algoritmos evolutivos</a></td>
                   <td>15 Mar</td>
                   <td>180</td>
@@ -231,6 +231,25 @@
                   <td>29 Mar</td>
                   <td>152</td>
                 </tr>
+<!--
+                <tr>  
+                  <td  class="success" colspan="4">
+                    <a class="deshacer" onClick="undoRow()">
+                      <span class="fa fa-undo"></span> Deshacer
+                    </a>
+                    | se ah inscripto a Interacción persona-computadora
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
+                  <td><a href="perfil_materia.html">Interacción persona-computadora</a></td>
+                  <td>15 Mar</td>
+                  <td>172</td>
+                </tr>
+
+-->
+
                 <tr>
                   <td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td>
                   <td><a href="perfil_materia.html">Seminario de Ingeniería Biomédica</a></td>
@@ -340,7 +359,7 @@
                 </tr>
               </tbody>
             </table>
-			
+            
           </div>
         </div>
       </div>
@@ -510,49 +529,36 @@ $(document).ready(function () {
 
 /****/
 
-// Wait for the page to load first
-window.onload = function() {
-
-  //Get a reference to the link on the page
-  // with an id of "mylink"
-  var a = document.getElementById("anadir");
-
-  //Set code to run when the link is clicked
-  // by assigning a function to "onclick"
-  a.onclick = function() {
-
-    // Your code here...
-    $('#alert-container').stickyalert({
-      barFontColor:'#eee',
-      barColor:'#222',
-      barFontSize: '1.6rem',
-      barText:'Se ha inscrito a Interacción persona-computadora satisfactoriamente. Si desea desistir, cliquee aquí.',
-      barTextLink:'#',
-      cookieRememberDays: '2'
-    });
-    //If you don't want the link to actually 
-    // redirect the browser to another page,
-    // "google.com" in our example here, then
-    // return false at the end of this block.
-    // Note that this also prevents event bubbling,
-    // which is probably what we want here, but won't 
-    // always be the case.
-    return false;
-  }
-}
 
 
-
-
-/*** ELIMINAR FILA ***/
-function delRow()
-{
+/*** ELIMINAR FILA y muestra modal ***/
+function delRow2(){
   var current = window.event.srcElement;
     //here we will delete the line
     while ( (current = current.parentElement)  && current.tagName !="TR");
     current.parentElement.removeChild(current);
     $('#myModal').modal('show'); 
   }
+
+
+
+
+  function delRow()  {
+    var current = window.event.srcElement;
+    while ( (current = current.parentElement)  && current.tagName !="TR");
+    current.innerHTML='<tr><td  class="success" colspan="4"><a class="deshacer" onClick="undoRow()"><span class="fa fa-undo"></span> Deshacer </a><b> | se ah inscripto a Interacción persona-computadora</b></td></tr>';
+
+  }
+
+
+  function undoRow()  {
+    var current = window.event.srcElement;
+    while ( (current = current.parentElement)  && current.tagName !="TR");
+    current.innerHTML='<td><a><span class="glyphicon glyphicon-plus" onClick="delRow()"></span></a></td><td><a href="perfil_materia.html">Interacción persona-computadora</a></td><td>15 Mar</td><td>172</td>';
+  }
+
+
+
   </script>    
 
 
