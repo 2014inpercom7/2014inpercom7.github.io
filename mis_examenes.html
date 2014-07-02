@@ -8,6 +8,8 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -226,6 +228,27 @@
                         <td>09 Jul</td>
                         <td>198</td>
                       </tr>
+<!--
+                      <tr>  
+                        <td  class="success" colspan="5">
+                          <a class="deshacer" onClick="undoRow(event)">
+                            <span class="fa fa-undo"></span> Deshacer
+                          </a>
+                          <b>| Se ha realizado la inscripción al examen de Interacción persona-computadora</b>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a href="perfil_materia.html">Interacción persona-computadora</a></td>
+                        <td>Mar 21 Jul 17:00</td>
+                        <td>09 Jul</td>
+                        <td>208</td>
+                      </tr>
+
+-->
+
+
                       <tr>
                         <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
                         <td><a href="perfil_materia.html">Teoría de Lenguajes</a></td>
@@ -481,7 +504,7 @@ $(document).ready(function () {
 
 
 /*** ELIMINAR FILA ***/
-function delRow()
+function delRow2()
 {
   var current = window.event.srcElement;
     //here we will delete the line
@@ -489,6 +512,31 @@ function delRow()
     current.parentElement.removeChild(current);
     $('#myModal').modal('show'); 
   }
+
+
+
+
+
+    function delRow(e)  {
+    //var current = window.event.srcElement || e.target;
+    var evt = e || window.event; 
+    var current = evt.target || evt.srcElement; 
+   
+    while ( (current = current.parentElement)  && current.tagName !="TR");
+    current.innerHTML='<tr><td  class="success" colspan="5"><a class="deshacer" onClick="undoRow(event)"><span class="fa fa-undo"></span> Deshacer </a><b>| Se ha realizado la inscripción al examen de Interacción persona-computadora</b></td></tr>';
+
+  }
+
+
+  function undoRow(e)  {
+    var evt = e || window.event; 
+    var current = evt.target || evt.srcElement; 
+ 
+    //var current = window.event.srcElement || e.target;
+    while ( (current = current.parentElement)  && current.tagName !="TR");
+    current.innerHTML='<tr><td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td><td><a href="perfil_materia.html">Interacción persona-computadora</a></td><td>Mar 21 Jul 17:00</td><td>09 Jul</td><td>208</td></tr>';
+  }
+
 
   </script>    
 
