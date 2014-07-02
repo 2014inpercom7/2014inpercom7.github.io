@@ -180,49 +180,49 @@
                     </thead>
                     <tbody class="searchable2">
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Interoperabilidad</a></td>
                         <td>Lun 13 Jul 08:00</td>
                         <td>02 Jul</td>
                         <td>180</td>
                       </tr>
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Butiá: Robótica educativa</a></td>
                         <td>Jue 16 Jul 14:00</td>
                         <td>02 Jul</td>
                         <td>10</td>
                       </tr>
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Cálculo 3</a></td>
                         <td>Mar 21 Jul 08:00</td>
                         <td>02 Jul</td>
                         <td>150</td>
                       </tr>
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Control de calidad</a></td>
                         <td>Sáb 25 Jul 08:00</td>
                         <td>09 Jul</td>
                         <td>9</td>
                       </tr>
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Programación 3</a></td>
                         <td>Vier 17 Jul 09:00</td>
                         <td>09 Jul</td>
                         <td>59</td>
                       </tr>
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Programacíon Lógica</a></td>
                         <td>Lun 13 Jul 08:00</td>
                         <td>02 Jul</td>
                         <td>152</td>
                       </tr>
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Seminario de Ingeniería Biomédica</a></td>
                         <td>Mar 21 Jul 18:00</td>
                         <td>09 Jul</td>
@@ -239,7 +239,7 @@
                       </tr>
 
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Interacción persona-computadora</a></td>
                         <td>Mar 21 Jul 17:00</td>
                         <td>09 Jul</td>
@@ -250,7 +250,7 @@
 
 
                       <tr>
-                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td>
+                        <td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td>
                         <td><a href="perfil_materia.html">Teoría de Lenguajes</a></td>
                         <td>Mar 21 Jul 08:00</td>
                         <td>09 Jul</td>
@@ -534,7 +534,7 @@ function delRow2()
  
     //var current = window.event.srcElement || e.target;
     while ( (current = current.parentElement)  && current.tagName !="TR");
-    current.innerHTML='<tr><td><a><span class="glyphicon glyphicon-plus"  onClick="delRow()"></span></a></td><td><a href="perfil_materia.html">Interacción persona-computadora</a></td><td>Mar 21 Jul 17:00</td><td>09 Jul</td><td>208</td></tr>';
+    current.innerHTML='<tr><td><a><span class="glyphicon glyphicon-plus"  onClick="delRow(event)"></span></a></td><td><a href="perfil_materia.html">Interacción persona-computadora</a></td><td>Mar 21 Jul 17:00</td><td>09 Jul</td><td>208</td></tr>';
   }
 
 
