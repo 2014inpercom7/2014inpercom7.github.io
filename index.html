@@ -1,207 +1,249 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SGB - Sistema de Gestión de Bedelías</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SGB - Sistema de Gestión de Bedelías</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+      <![endif]-->
+    </head>
     <body>
+      <body>
 
-    <!--barra de navegacion -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand " href="index.html">SGB</a>
+        <!--barra de navegacion -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand " href="index.html">SGB</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left navbar-input-group" role="search" style="z-index:11000">
+                  <div class="form-group"  id="the-basics">
+                    <input type="text" class="form-control typeahead" placeholder="Buscar">
+                  </div>
+                  <button type="submit" class="btn btn-default">Ir</button>
+                </form>
+
+                <form class="navbar-form navbar-right" role="iniciar_sesion">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Usuario">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                  </div>
+                  <a href="mi_perfil.html" class="btn btn-default" role="button">Entrar</a>
+                </form>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
           </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left navbar-input-group" role="search" style="z-index:11000">
-              <div class="form-group"  id="the-basics">
-                <input type="text" class="form-control typeahead" placeholder="Buscar">
-              </div>
-              <button type="submit" class="btn btn-default">Ir</button>
-            </form>
-
-            <form class="navbar-form navbar-right" role="iniciar_sesion">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Usuario">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" placeholder="Contraseña">
-              </div>
-              <a href="mi_perfil.html" class="btn btn-default" role="button">Entrar</a>
-            </form>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+        </nav>
       </div>
-    </nav>
-    </div>
-    <div class="container toppaddingsmall">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <ul class="media-list">
-              <li class="media">
-                <a class="pull-left" href="carreras.html">
-                  <img class="media-object thumbnail" src="img/fing.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading"><a class="pull-left" href="carreras.html">Ingeniería</a></h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/quimica.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Química</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/ciencias.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Ciencias</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/agronomia.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Agronomía</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/veterinaria.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Veterinaria</h4>
-                </div>
-              </li>
-            </ul>            
-          </div> <!-- primera columna-->
-          <div class="col-xs-12 col-sm-4">
-            <ul class="media-list">
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/ciencias_soc.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Ciencias Sociales</h4>
-                </div>
-              </li>
-               <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/comunicacion.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Comunicación</h4>
-                </div>
-              </li>
-               <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/economia.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Ciencias Económicas</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/derecho.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Derecho</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/regnorte.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Regional Norte</h4>
-                </div>
-              </li>
-            </ul>            
-          </div> <!-- segunda columna--> 
-          <div class="col-xs-12 col-sm-4">
-            <ul class="media-list">
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/medicina.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Medicina</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/odonto.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Odontología</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/sicologia.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Psicología</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/enfermeria.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Enfermería</h4>
-                </div>
-              </li>
-              <li class="media">
-                <a class="pull-left" href="#">
-                  <img class="media-object thumbnail" src="img/isef.png">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Educación Física</h4>
-                </div>
-              </li>
-            </ul>            
-          </div> <!-- segunda columna--> 
-          </div><!-- fila-->
-        </div> <!-- panel heading-->
+      <div class="container toppaddingsmall">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <ul class="media-list">
+                  <li class="media">
+                    <a class="pull-left" href="carreras.html">
+                      <img class="media-object thumbnail" src="img/fing.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a class="pull-left" href="carreras.html">Ingeniería</a></h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/quimica.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Química</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/ciencias.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Ciencias</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/agronomia.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Agronomía</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/veterinaria.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Veterinaria</h4>
+                    </div>
+                  </li>
+                </ul>            
+              </div> <!-- primera columna-->
+              <div class="col-xs-12 col-sm-4">
+                <ul class="media-list">
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/ciencias_soc.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Ciencias Sociales</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/comunicacion.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Comunicación</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/economia.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Ciencias Económicas</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/derecho.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Derecho</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/regnorte.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Regional Norte</h4>
+                    </div>
+                  </li>
+                </ul>            
+              </div> <!-- segunda columna--> 
+              <div class="col-xs-12 col-sm-4">
+                <ul class="media-list">
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/medicina.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Medicina</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/odonto.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Odontología</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/sicologia.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Psicología</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/enfermeria.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Enfermería</h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object thumbnail" src="img/isef.png">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Educación Física</h4>
+                    </div>
+                  </li>
+                </ul>            
+              </div> <!-- segunda columna--> 
+            </div><!-- fila-->
+          </div> <!-- panel heading-->
         </div> <!-- panel-->
-    </div> <!-- container-->
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-   
-  </body>
-</html>
+      </div> <!-- container-->
+      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/typeahead.bundle.min.js"></script>
+      <script src="js/typeahead.jquery.min.js"></script>
+      <script type="text/javascript">
+      var substringMatcher = function(strs) {
+        return function findMatches(q, cb) {
+          var matches, substringRegex;
+
+          // an array that will be populated with substring matches
+          matches = [];
+
+          // regex used to determine if a string contains the substring `q`
+          substrRegex = new RegExp(q, 'i');
+
+          // iterate through the pool of strings and for any string that
+          // contains the substring `q`, add it to the `matches` array
+          $.each(strs, function(i, str) {
+            if (substrRegex.test(str)) {
+              // the typeahead jQuery plugin expects suggestions to a
+              // JavaScript object, refer to typeahead docs for more info
+              matches.push({ value: str });
+            }
+          });
+
+          cb(matches);
+        };
+      };
+
+      var states = ['Cálculo 1', 'Cálculo 2', 'Cálculo 3', 'Interacción persona-computadora', 'Sistemas Operativos', 'GAL 1','Sistemas Operativos', 'Ingeniería civil: plan 1947','Ingeniería eléctrica: plan 1947','Ingeniería en computación: plan 1947', 'Mis Cursos','Todos los Cursos','Inscribirse a Curso','Desistir de Curso', 'Mis Examenes','Calendario de Examenes','Inscribirse a Examen','Desistir de Examen','Ayuda'
+      ];
+
+      $('#the-basics .typeahead').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        displayKey: 'value',
+        source: substringMatcher(states)
+      });
+      </script>
+
+      
+    </body>
+    </html>
