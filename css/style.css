@@ -27,6 +27,13 @@ body {
   cursor: pointer;
 }
 
+
+
+@media (max-width: 767px) {
+    .text-center-xs {
+        text-align: center;
+    }
+}
 /***************************************************
   alerta
 **************************************************/
